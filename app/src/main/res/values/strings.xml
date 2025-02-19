@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VisionAI</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="pick_picture">From Gallery</string>
+    <string name="rating">Top 5 guesses:</string>
+    <string name="dish">Take or choose a picture \n
+        from gallery to see potential dishes</string>
+    <string name="first">№1: </string>
+    <string name="second">№2: </string>
+    <string name="third">№3: </string>
+    <string name="fourth">№4: </string>
+    <string name="fifth">№5: </string>
+    <string name="secret">Sorry, we do not have this data yet</string>
+    <string name="loading">Loading image! Please wait…</string>
+</resources>

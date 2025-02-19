@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="130sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_outline"
+        android:onClick="openImageChooser"
+        android:text="@string/pick_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="130sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_outline"
+        android:onClick="captureImage"
+        android:text="@string/take_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view_for_text"
+        android:layout_width="300sp"
+        android:layout_height="315sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/gray_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button" />
+
+
+    <TextView
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/ratingView" />
+
+    <TextView
+        android:id="@+id/top1_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/secret"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top1" />
+
+    <TextView
+        android:id="@+id/top2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top1" />
+
+    <TextView
+        android:id="@+id/top2_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/secret"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top2" />
+
+    <TextView
+        android:id="@+id/top3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top2" />
+
+    <TextView
+        android:id="@+id/top3_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/secret"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top3" />
+
+    <TextView
+        android:id="@+id/top4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top3" />
+
+    <TextView
+        android:id="@+id/top4_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/secret"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top4" />
+
+    <TextView
+        android:id="@+id/top5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top4" />
+
+    <TextView
+        android:id="@+id/top5_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/secret"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toBottomOf="@+id/top5" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300sp"
+        android:layout_height="280sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gray_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="224sp"
+        android:layout_height="224sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/ratingView"
+        android:layout_width="200sp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/rating"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/view_for_text"
+        app:layout_constraintStart_toStartOf="@+id/view_for_text"
+        app:layout_constraintTop_toTopOf="@+id/view_for_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
